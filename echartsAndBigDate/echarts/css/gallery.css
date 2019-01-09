@@ -1,0 +1,82 @@
+.right .right2{
+    margin-bottom: 10px;
+}
+.right .spans{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-bottom:10px;
+}
+.right .spans span{
+    vertical-align: center;
+    color: #75b9e6;
+    background: white;
+    margin-right: 15px;
+    border: 2px solid #75b9e6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.right .spans span:hover{
+    color: white;
+    background: #75b9e6;
+}
+.right .tus{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.right .tus img{
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+@media screen and (max-width: 1152px) {
+    .head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px !important;
+    }
+    .left{
+        display: none!important;
+    }
+    .right {
+        width: 100%;
+        margin-left: -230px;
+    }
+    .right .spans{
+        margin-top: 10px;
+    }
+    .tus img{
+        width: 48% !important;
+        height: 240px!important;
+    }
+}
+@media screen and (max-width: 570px) {
+    .head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px !important;
+    }
+    .right{
+        width: 100% !important;
+        margin-left: -230px;
+    }
+    .right .spans{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .right .spans span{
+        margin-bottom: 10px;
+    }
+    .tus img{
+        width: 100%!important;
+        height: 300px!important;
+    }
+}

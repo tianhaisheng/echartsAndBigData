@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>login</title>
+<style>
+    body,html{
+        height: 100%;
+    }
+    body{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #75b9e6;
+    }
+    .big{
+        width: 470px;
+        overflow: hidden;
+        margin: auto 0;
+        background: white;
+    }
+    .top{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        background: #f2f5f6;
+    }
+    .top span{
+        width: 50%;
+        height: 30px;
+        color: gray;
+        text-align: center;
+        line-height: 30px;
+    }
+    .top span:hover{
+        background: darkgray;
+        color: white;
+    }
+    .imgs{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgs img{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .inputs{
+        width:100%;
+        overflow: hidden;
+    }
+    .input1,.input2{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border: 1px solid lightslategray;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .input2{
+        margin-bottom: 0;
+    }
+    .input1 input{
+        width: 90%;
+        height: 30px;
+        border: none;
+        outline: none;
+    }
+    .input2 input{
+        width: 90%;
+        height: 30px;
+        border: none;
+        outline: none;
+    }
+    .input1 img{
+        width: 20px;
+        height: 20px;
+    }
+    .input2 img{
+        width: 20px;
+        height: 20px;
+    }
+    .as{
+        width: 100%;
+        height: 20px;
+    }
+    .as a{
+        font-size: 14px;
+        color: #75b9e6;
+        margin-left: 24px;
+        text-decoration: none;
+    }
+    .bottom{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bottom div{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .bottom input:nth-child(1){
+        width: 20px;
+        height: 20px;
+    }
+    .bottom span{
+        font-size: 16px;
+        color:#758399;
+        font-weight: bold;
+    }
+    .bottom input:nth-child(2){
+        background: #70d398;
+        border: none;
+        height: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 24px;
+    }
+</style>
+</head>
+<body>
+<div class="big">
+    <div class="top">
+        <span>Login</span>
+        <span>Regist</span>
+    </div>
+    <div class="imgs">
+        <img src="../img/login-1.jpg">
+        <img src="../img/login-2.jpg">
+        <img src="../img/login-3.jpg">
+        <img src="../img/login-4.jpg">
+    </div>
+    <div class="inputs">
+        <div class="input1">
+            <img src="../img/login-5.jpg">
+            <input type="text" placeholder="Your email ...">
+        </div>
+        <div class="input2">
+            <img src="../img/login-6.jpg">
+            <input type="password" placeholder="Your password ...">
+        </div>
+    </div>
+    <div class="as">
+        <a href="#">Forgout password?</a>
+    </div>
+    <div class="bottom">
+        <div>
+            <input type="checkbox" />
+            <span>Remeber me ?</span>
+        </div>
+        <input type="submit" value="Login"/>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index首页</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<link rel="stylesheet" type="text/css" href="../css/simple-calendar.css">
+<script src="../js/echarts.js"></script>
+<script src="../js/jquery1.42.min.js"></script>
+<script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="../js/simple-calendar.js"></script>
+</head>
+<body>
+<div class="head">
+    <div class="head1">
+        <img src="../img/logo.png">
+        <img src="../img/1.jpg">
+        <img src="../img/2.jpg">
+        <img src="../img/3.jpg">
+        <img src="../img/4.jpg">
+    </div>
+    <div class="head3">
+        <img src="../img/5.jpg">
+        <img src="..//img/6.jpg">
+        <img src="../img/9.jpg">
+        <img src="../img/7.jpg">
+        <img src="../img/8.jpg">
+    </div>
+</div>
+<div class="big">
+    <div class="left">
+        <ul>
+            <li><img src="../img/10.jpg"/><span>AEARCH...</span></li>
+            <li><img src="../img/11.jpg"/><span>DASHBOARD</span></li>
+            <li><img src="../img/12.jpg"/><span>CHARTS</span></li>
+            <li><img src="../img/13.jpg"/><span>FORMS</span></li>
+            <li><img src="../img/14.jpg"/><span>TABLES</span></li>
+            <li><img src="../img/15.jpg"/><span>UI ELEMENTS</span></li>
+            <li><img src="../img/16.jpg"/><span>EMAIL APP</span></li>
+            <li><img src="../img/17.jpg"/><span>FILE MANAGER</span></li>
+            <li><img src="../img/18.jpg"/><span>GALLERY</span></li>
+            <li><img src="../img/19.jpg"/><span>WIDGETS</span></li>
+            <li><img src="../img/20.jpg"/><span>MAPS</span></li>
+            <li><img src="../img/21.jpg"/><span>PAGES</span></li>
+            <li><img src="../img/21.jpg"/><span>BONUS</span></li>
+            <li><img src="../img/20.jpg"/><span>SEVER USAGE</span></li>
+        </ul>
+        <div class="left-bot">
+            <span>Disk space</span>
+            <span>78%<span id="small"></span></span>
+            <div id="main"></div>
+        </div>
+        <div class="left-bot">
+            <span>CPU</span>
+            <span>56%<span id="small1"></span></span>
+            <div id="main1"></div>
+        </div>
+        <div class="left-bot">
+            <span>Memory</span>
+            <span>14%<span id="small2"></span></span>
+            <div id="main2"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right1">
+            <div class="right1-1">
+                <img src="../img/11.jpg">
+                <span>Dashboard</span>
+            </div>
+            <div class="right1-2">
+                <img src="../img/22.jpg">
+                <img src="../img/23.jpg">
+                <img src="../img/24.jpg">
+                <img src="../img/25.jpg">
+            </div>
+        </div>
+        <div class="right2">
+            <img src="../img/26.jpg">
+        </div>
+        <div class="right3">
+            <img src="../img/27.jpg">
+            <img src="../img/28.jpg">
+            <img src="../img/29.jpg">
+            <img src="../img/30.jpg">
+        </div>
+        <div class="colum">
+            <div class="colum1">
+                <div class="page">
+                    <div class="pagetop">
+                        <img src="../img/1.png">
+                        <div class="spans">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div id="preview"></div>
+                    <div class="pagecen">
+                        <span>MON</span>
+                        <span>TUS</span>
+                        <span>WED</span>
+                        <span>THU</span>
+                        <span>FRI</span>
+                        <span>STA</span>
+                        <span>SUN</span>
+                    </div>
+                    <div class="pagebot">
+                        <div class="pagebot1">
+                            <span>75</span>
+                            <span>Today</span>
+                        </div>
+                        <div class="pagebot1">
+                            <span>69</span>
+                            <span>Yestarday</span>
+                        </div>
+                        <div class="pagebot1">
+                            <span>380</span>
+                            <span>This Week</span>
+                        </div>
+                        <div class="pagebot1">
+                            <span>1254</span>
+                            <span>Total</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lbt">
+                    <div class="lbt1">
+                        <img src="../img/lbt1.png">
+                    </div>
+                    <div class="lbt2">
+                        <p>
+                            <span>FOLLOWERS</span>
+                            <span>1256</span>
+                        </p>
+                        <p>
+                            <span>FOLLOWING</span>
+                            <span>234</span>
+                        </p>
+                        <p>
+                            <span>SHORTS</span>
+                            <span>176</span>
+                        </p>
+                    </div>
+                    <div class="lbt3 ">
+                        <div class="focus" style="margin:0 auto">
+                            <div id="pic">
+                                <ul>
+                                    <li><img src="../img/lbt4.jpg"></a> </li>
+                                    <li><img src="../img/lbt5.jpg"></a> </li>
+                                    <li><img src="../img/lbt6.jpg"></a></li>
+                                </ul>
+                            </div>
+                            <div class="tip-bg"></div>
+                            <div id="tip">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="btn">
+                                <ul>
+                                    <li class="prev" id="focus_btn_left"></li>
+                                    <li class="next" id="focus_btn_right"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lbt4">
+                        <p>
+                            <img src="../img/lbt1.jpg">
+                            <span>17</span>
+                        </p>
+                        <p>
+                            <img src="../img/lbt2.jpg">
+                            <span>27</span>
+                        </p>
+                    </div>
+                </div>
+                <div id="container" style="float:none;margin: 0px auto;"></div>
+            </div>
+            <div class="colum2">
+                <div class="earning">
+                    <div class="earningtop">
+                        <img src="../img/total.png">
+                        <span>Total:$1139</span>
+                    </div>
+                    <div id="earning"></div>
+                    <div class="earnsecond" id="earnsecond"></div>
+                    <div class="earnlast" id="earnlast"></div>
+                </div>
+                <div class="weahter">
+                    <div class="weath1">
+                        <div class="weathtop">
+                            <img src="../img/weath.png">
+                        </div>
+                        <div class="icon thunder-storm sun2">
+                            <div class="cloud"></div>
+                            <div class="lightning">
+                                <div class="bolt"></div>
+                                <div class="bolt"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weath2">
+                        <span>Today</span>
+                        <span>多云</span>
+                        <span>6℃</span>
+                    </div>
+                    <div class="weath">
+                        <div class="icon sunny">
+                            <div class="sun">
+                                <div class="rays"></div>
+                            </div>
+                        </div>
+                        <div class="icon rainy sun1">
+                            <div class="cloud"></div>
+                            <div class="rain"></div>
+                        </div>
+                        <div class="icon thunder-storm">
+                            <div class="cloud"></div>
+                            <div class="lightning">
+                                <div class="bolt"></div>
+                                <div class="bolt"></div>
+                            </div>
+                        </div>
+                        <div class="icon sun-shower">
+                            <div class="cloud"></div>
+                            <div class="sun">
+                                <div class="rays"></div>
+                            </div>
+                            <div class="rain"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lat">
+                    <span>真的不知道加个什么,然后还想弄完整。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    //左边表格
+    var myChart = echarts.init(document.getElementById("small"));
+    option = {
+        toolbox: {
+            show : true
+        },
+        calculable : true,
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : ['50%', '70%'],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false
+                        },
+                        labelLine : {
+                            show : false
+                        }
+                    }
+                },
+                data:[
+                    {value:335},
+                    {value:1548}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        xAxis: {
+            type: 'category',
+            show:false
+        },
+        yAxis: {
+            type: 'value',
+            show:false
+        },
+        series: [{
+            data: [82, 93, 90, 93, 99, 83,92,89,99,80],
+            type: 'line'
+            }
+        ]
+    };
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById("small1"));
+    option = {
+        toolbox: {
+            show : true
+        },
+        calculable : true,
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : ['50%', '70%'],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false
+                        },
+                        labelLine : {
+                            show : false
+                        }
+                    }
+                },
+                data:[
+                    {value:500},
+                    {value:1000}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById('main1'));
+    var option = {
+        xAxis: {
+            type: 'category',
+            show:false
+        },
+        yAxis: {
+            type: 'value',
+            show:false
+        },
+        series: [{
+            data: [82, 93, 90, 93, 99, 83,92,89,99,80],
+            type: 'line'
+        }
+        ]
+    };
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById("small2"));
+    option = {
+        toolbox: {
+            show : true
+        },
+        calculable : true,
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : ['50%', '70%'],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false
+                        },
+                        labelLine : {
+                            show : false
+                        }
+                    }
+                },
+                data:[
+                    {value:700},
+                    {value:800}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById('main2'));
+    var option = {
+        xAxis: {
+            type: 'category',
+            show:false
+        },
+        yAxis: {
+            type: 'value',
+            show:false
+        },
+        series: [{
+            data: [82, 93, 90, 93, 99, 83,92,89,99,80],
+            type: 'line'
+        }
+        ]
+    };
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById('preview'));
+
+    //右侧中间部分开始
+    option = {
+        backgroundColor:'#ffffff',
+        title:{
+            left:'280px',
+            top:'-5px',
+            textStyle:{
+                color:'red'
+            },
+            subtext:'Visitiors          Return visitiors'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['MON','TUE','WED','THU','FRI','SAT','SUN'],
+            axisLine:false
+        },
+        symbol:'circle',
+        yAxis: {
+            type: 'value',
+            show:false
+        },
+        series: [
+            {
+                symbol:'circle',
+                name:'Visitiors',
+                type:'line',
+                data:[220, 232, 201, 234, 190, 330, 310]
+            },
+            {
+                symbol:'circle',
+                name:'Return visitiors',
+                type:'line',
+                data:[100, 12, 111,354, 70, 210, 30]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    jQuery(".focus").slide({ titCell:"#tip li", mainCell:"#pic ul",effect:"left",autoPlay:true,delayTime:200 });
+    var myCalendar = new SimpleCalendar('#container');
+    myCalendar.updateSize('100%', '500px');
+
+    //右侧右边开始
+    var myChart = echarts.init(document.getElementById('earning'));
+    option = {
+        tooltip: {
+            trigger: 'axis'
+        },
+        backgroundColor:'#75b9e6',
+        legend: {
+            data:['Total'],
+            right:'20px',
+            top:'5px'
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['26/12/18','27/12/18','28/12/18','29/12/18','30/12/18','31/12/18','1/1/19'],
+            axisTick: {
+                show: false
+            },
+            splitLine:{
+                show:false
+            },
+            axisLine: {
+                show: false,
+                lineStyle:{
+                    color:'white'
+                },
+                onZero:false
+            },
+            boundaryGap: true
+        },
+        yAxis: {
+            type: 'value',
+            axisLine:{
+                show:false
+            },
+            splitLine:{
+                show:true,
+                color:'red',
+                lineStyle:{
+                    color:'#93c8eb',
+                    width:1
+                }
+            },
+            axisLine: {
+                show: false,
+                lineStyle:{
+                    color:'white',
+                    width:1
+                }
+            },
+            axisTick:{
+                show:false,
+                paddingLeft:'30px'
+            }
+        },
+        series: [
+            {
+                type:'line',
+                symbolSize: 10,
+                data:[120, 132, 101, 134, 90, 230, 210],
+                itemStyle : {
+                    normal : {
+                        lineStyle:{
+                            color:'white'
+                        }
+                    }
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById('earnsecond'));
+    option = {
+        tooltip: {
+            trigger: 'item'
+        },
+        legend: {
+            orient: 'vertical',
+            x: 'right',
+            y:'middle',
+            data:['Coding','Design','SEO']
+        },
+        series: [
+            {   name:'',
+                type:'pie',
+                radius: ['50%', '70%'],
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'center'
+                    }
+                },
+                hoverAnimation:false,
+                data:[
+                    {value:335, name:'Coding'},
+                    {value:310, name:'Design'},
+                    {value:234, name:'SEO'}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    var myChart = echarts.init(document.getElementById('earnlast'));
+    option = {
+        xAxis: {
+            type: 'category',
+            data: ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'],
+            axisTick: {
+                show: false
+            },
+            axisLabel:{
+                interval:0
+            },
+            axisLine: {
+                show: false
+            }
+        },
+        yAxis: {
+            type: 'value',
+            show:false
+        },
+        series: [{
+            data: [80, 90, 70, 80, 70, 80, 90,52,71,93,12,31],
+            type: 'bar',
+            color:'#71d398'
+        }]
+    };
+    myChart.setOption(option);
+
+</script>
